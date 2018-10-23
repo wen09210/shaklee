@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/signup.css">
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+  
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#" id="nav1" ><img src="img/shaklee_logo_white.png" alt=""></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+	      <ul class="nav navbar-nav navbar-right">
+	        <!--<li><a href="#" id="nav1">線上優惠</a></li>-->
+	        <li><a href="index.html#hotnews" id="nav2">活動內容</a></li>
+	        <li><a href="#" id="nav3">投票專區</a></li>
+	        <li><a href="#" id="nav4">參賽者專區</a></li>
+	        <li><a href="https://www.shaklee.com.tw/" id="nav5" target="_blank">嘉康利官網</a></li>
+	        <li><a href="https://www.facebook.com/taiwanshaklee/" target="_blank" id="nav5" onclick="ga('send','event','首頁','click','粉絲團');"><img src="img/face_icon.png" alt="" style="margin-right:5px;width:20px;">嘉康利生活大平台</a></li>
+	        
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<div class="row form_section">
+	<div class="container">
+		<div class="man hidden-xs"><img src="img/activity/man.png" alt=""></div>
+		<div class="woman hidden-xs"><img src="img/activity/woman.png" alt=""></div>
+		<div class="col-md-12 middle">
+			<div class="form">
+				<div class="form_header">
+					<span>“我要報名!”</span>
+					<span>嘉康利2017快閃激瘦團體初賽</span>
+					<span>請隊長填妥以下報名資料</span>
+					<img src="img/signup/join_bear.png" alt="" class="hidden-xs">
+				</div>
+				<div class="form_content">
+					<div class="col-md-10 col-md-offset-1">
+						<form class="form-horizontal" data-toggle="validator" role="form" action="" method="post" data-backdrop="static">
+							<div class="col-md-12 paddingspace">
+								<span class="form_subtitle">團體報名</span>
+								<input type="text" required>
+							</div>
+							<div class="col-md-12">
+								<span class="form_subtitle">團體精神宣言</span>
+								<input type="text" placeholder="(字數限20字以內)" maxlength="20" required>
+							</div>
+
+							<div class="col-md-12 upload_section">
+								<a href="">上傳團體相片<i class="fa fa-upload" aria-hidden="true"></i></a>
+							</div>
+							<div class="col-md-12 paddingspace">
+								<span class="form_subtitle">隊長1</span>
+								<input type="text" placeholder="會員姓名" required>
+								<input type="text" placeholder="會員編號" required>
+								<input type="text" placeholder="連絡電話" pattern="[0-9]" required data-error="請填入有效電話號碼" >
+							</div>
+							<div class="col-md-12">
+								<span class="form_subtitle">隊員2</span>
+								<input type="text" placeholder="會員姓名" required>
+								<input type="text" placeholder="會員編號" required>
+								<input type="text" placeholder="連絡電話" pattern="[0-9]" required data-error="請填入有效電話號碼" >
+							</div>
+							<div class="col-md-12">
+								<span class="form_subtitle">隊員3</span>
+								<input type="text" placeholder="會員姓名" required>
+								<input type="text" placeholder="會員編號" required>
+								<input type="text" placeholder="連絡電話" pattern="[0-9]" required data-error="請填入有效電話號碼" >
+							</div>
+							<div class="col-md-12">
+								<span class="form_subtitle">隊員4</span>
+								<input type="text" placeholder="會員姓名" required>
+								<input type="text" placeholder="會員編號" required>
+								<input type="text" placeholder="連絡電話" pattern="[0-9]" required data-error="請填入有效電話號碼" >
+							</div>
+							<div class="col-md-12">
+								<span class="form_subtitle">隊員5</span>
+								<input type="text" placeholder="會員姓名" required>
+								<input type="text" placeholder="會員編號" required>
+								<input type="text" placeholder="連絡電話" pattern="[0-9]" required data-error="請填入有效電話號碼" >
+							</div>
+							<div class="col-md-12">
+								<div class="col-xs-1 check_confirm">
+									<input type="checkbox" id="checkboxOneInput" name="" required>
+									<label for="checkboxOneInput"></label>
+								</div>
+								<div class="col-xs-11">	本人與本人之隊員同意以上資料予嘉康利2017快閃激瘦減重賽主辦單位(嘉康利股份有限公司台灣分公司)，並確保其真實正確，且充分授權主辦單位在本活動目的範圍內加以適當之蒐集、處理及利用。本欄之勾取，視同本人及本人之隊員已依個人資料保護法提供書面同意。</div>
+							</div>
+							<div class="col-md-12 form_confirm">
+								<div class="col-md-2"><img src="img/signup/team_bear.png" alt=""></div>
+								<div class="col-md-10">親愛的嘉人們，請再次確認填寫資料的正確性，報名表送出後恕不接受更改，再次感謝您的支持與參與!</div>
+							</div>
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-danger btn-lg col-xs-12 col-md-3 col-md-offset-2 send disabled" name="myButton" value="Submit">送出報名表</button>
+								<button type="cancel" class="btn btn-danger btn-lg col-xs-12 col-md-3 col-md-offset-2 cancel" name="myButton2" value="cancel">取消</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="form_notice col-md-10 col-md-offset-1">
+				<ul>
+					<li>參賽者參加前需評估自己身體健康狀態，如有心血管或其他重大疾病、孕婦及經醫師診斷不適參加體重管理者，恕不予納入。</li>
+					<li>參賽者務必填寫真實姓名及資料，以維護參賽者權益。</li>
+					<li>嘉康利股份有限公司台灣分公司享有使用參賽者所提供資料之權利。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+			<div class="row ">
+				
+				<div class="col-md-6" >
+					<span></span><img src="img/shaklee_logo_white.png" alt="">
+				</div>
+				<div class="col-md-6" style="text-align: right">
+					<p>COPYRIGHT © 2016 美商嘉康利台灣分公司</p>
+					<p>© 2016 Shaklee Taiwan Co.Ltd ALL RIGHT RESERVED</p>
+				</div>
+				
+			</div>
+		</footer>
+
+</body>
+</html>

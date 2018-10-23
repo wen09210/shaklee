@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script> 
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+
+  
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#" id="nav1" ><img src="img/shaklee_logo_white.png" alt=""></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+	      <ul class="nav navbar-nav navbar-right">
+	        <!--<li><a href="#" id="nav1">線上優惠</a></li>-->
+	        <li><a href="index.html#hotnews" id="nav2">活動內容</a></li>
+	        <li><a href="#" id="nav3">投票專區</a></li>
+	        <li><a href="#" id="nav4">參賽者專區</a></li>
+	        <li><a href="https://www.shaklee.com.tw/" id="nav5" target="_blank">嘉康利官網</a></li>
+	        <li><a href="https://www.facebook.com/taiwanshaklee/" target="_blank" id="nav5" onclick="ga('send','event','首頁','click','粉絲團');"><img src="img/face_icon.png" alt="" style="margin-right:5px;width:20px;">嘉康利生活大平台</a></li>
+	        
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row team_vote">
+	<div class="team_banner">
+		<img src="img/team/inpage_banner.png" alt="">
+	</div>
+	<div class="team_list center">
+		<div class="some_word colorgreen">
+			<h3>參賽隊伍投票專區</h3>
+			<p>投票給你心目中的理想隊伍</p>
+			<p>完成後還有機會獲得精美好禮!</p>	
+		</div>
+		<div class="hole_team">
+			<div class="col-sm-6"> <img src="img/team/teamimg.jpg" alt=""></div>
+			<div class="col-sm-6 team_info">
+				<div class="team_order">
+					參賽隊伍編號 001
+				</div>
+				<div class="col-xs-6"><h3>參賽隊伍名稱</h3></div>
+				<div class="col-xs-6"><span class="popular">累積人氣</span>
+				<span class="popular_num"><img src="img/team/heart.png" alt="">100</span></div>
+				
+				<div class="clearfix"></div>
+				<div class="have_a_line">參賽隊員</div>
+				<ul>
+					<li>隊員一 01234567</li>
+					<li>隊員二 01234567</li>
+					<li>隊員三 01234567</li>
+					<li>隊員四 01234567</li>
+					<li>隊員五 01234567</li>
+				</ul>
+				<div class="clearfix"></div>
+				<div class="have_a_line">隊呼</div>
+				<div class="team_cheer">購買資料以嘉康利公司系統認定為準恕不接受非參賽本人之購買資格</div>
+				<span class="team_control"><a href="" title="">＜上一組</a></span>
+				<span class="team_control"><a href="" title="">下一組＞</a></span>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<button type="" class="btn team_btn btn-lg" id="team_btn">投票給他</button>		
+	</div>
+</div>
+
+<!-- 轉盤 -->
+<div class="modal fade" id="wheel" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        
+	        <div class="modal-body">
+	        	<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+			          <div class="row wheel_section">
+						<div class="">
+							<img src="img/team/team_title.png" alt="">
+							<img src="img/team/TURN-YES.gif" alt="">
+							
+						</div>
+					</div>
+	        </div>
+	      </div>
+	    </div>
+</div>
+
+<!-- 活動結果 -->
+<div class="modal fade" id="result" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        
+	        <div class="modal-body">
+	        	<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+			          <div class="row wheel_section">
+						<div class="award_yes">
+							<h3>恭喜您中獎了!</h3>
+							<p>CONGRATULATIONS</p>
+							<p>得獎者將於7/31號公布於官網</p>
+							<p>並於8/30號將獎品寄出</p>
+						</div>
+						<!-- <div class="award_no">
+							<h3>好可惜差一點!</h3>
+							<p>OOPS</p>
+							<p>每人每日可投一票</p>
+							<p>下次還有機會喔~</p>
+						</div> -->
+						<button type="" class="btn team_btn btn-lg" data-dismiss="modal"> 我知道了</button>
+					</div>
+	        </div>
+	      </div>
+	    </div>
+</div>
+
+<footer>
+			<div class="row ">
+				
+				<div class="col-md-6" >
+					<span></span><img src="img/shaklee_logo_white.png" alt="">
+				</div>
+				<div class="col-md-6" style="text-align: right">
+					<p>COPYRIGHT © 2016 美商嘉康利台灣分公司</p>
+					<p>© 2016 Shaklee Taiwan Co.Ltd ALL RIGHT RESERVED</p>
+				</div>
+				
+			</div>
+</footer>
+
+<script>
+	$("#team_btn").click(function(){
+		 $("#wheel").modal();
+		setTimeout(function(){
+			$("#wheel").modal("hide");
+			$("#result").modal();
+		},5000)
+		// 三秒後跳轉結果
+		
+	})
+</script>
+
+</body>
+</html>
